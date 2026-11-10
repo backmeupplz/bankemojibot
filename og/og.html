@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- Share image source: render to ../docs/og.png at 1200x630 (see README), then bump og.png?v=N in docs/index.html -->
+<html><head><meta charset="utf-8"><style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif; color: #f3f7f2;
+    background: radial-gradient(900px 600px at 30% 0%, #1f8a5b 0%, #0b3d2a 70%);
+    display: flex; align-items: center; gap: 56px; padding: 0 80px; box-sizing: border-box;
+  }
+  .left { flex: 1.1; }
+  .brand { display: flex; align-items: center; gap: 18px; font-size: 40px; font-weight: 800; margin-bottom: 26px; }
+  .brand img { width: 84px; height: 84px; border-radius: 50%; }
+  h1 { font-size: 60px; line-height: 1.06; margin: 0 0 22px; letter-spacing: -0.02em; }
+  h1 span { color: #ffd45e; }
+  p { font-size: 27px; color: #b7cfc1; margin: 0; line-height: 1.35; }
+  .chat { flex: 1; background: #17212b; border-radius: 26px; padding: 26px; position: relative; box-shadow: 0 30px 80px rgba(0,0,0,.4); }
+  .msg { display: flex; gap: 12px; align-items: flex-end; }
+  .ava { width: 44px; height: 44px; border-radius: 50%; background: #7bc862; display: grid; place-items: center; font-weight: 700; font-size: 20px; flex: none; }
+  .bubble { background: #182533; border-radius: 18px 18px 18px 5px; padding: 12px 16px; }
+  .bubble b { color: #7bc862; font-size: 19px; }
+  .bubble div { font-size: 21px; color: #e8edf1; margin-top: 2px; }
+  .reacts { display: flex; gap: 8px; margin-top: 12px; }
+  .r { background: #2b5278; border-radius: 999px; padding: 3px 13px; font-size: 19px; }
+  .r.m { background: #3e88d0; }
+  .toast { position: absolute; right: -18px; bottom: -30px; background: linear-gradient(180deg, #ffd45e, #f4b93a); color: #3b2504; font-weight: 800; padding: 13px 20px; border-radius: 16px; font-size: 23px; box-shadow: 0 12px 30px rgba(0,0,0,.35); }
+</style></head><body>
+  <div class="left">
+    <div class="brand"><img src="../docs/logo.svg" alt="">Bank</div>
+    <h1>Pay people back with a <span>reaction</span>.</h1>
+    <p>A tiny currency for every Telegram chat, where everyone starts with 100 coins.</p>
+  </div>
+  <div class="chat">
+    <div class="msg"><div class="ava">B</div><div class="bubble"><b>Bob</b><div>I've cleared the cache and kicked off the deploy again.</div>
+      <div class="reacts"><span class="r m">🏆 1</span><span class="r">🍓 2</span><span class="r">🍌 4</span></div></div></div>
+    <div class="toast">🏆 +25 from Ann</div>
+  </div>
+</body></html>
